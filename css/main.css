@@ -347,29 +347,12 @@
     padding: 20px 10px;
 }
 
-/* .main_event .event_arrows {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 2000px;
-    cursor: pointer;
-
-}
-
-.main_event .event_arrows i {
-    font-size: 27px;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-    padding: 20px 10px;
-} */
-
 @media(max-width: 768px) {
     .main_event {
+        display: none;
+    }
+
+    /* .main_event {
         position: relative;
     }
 
@@ -390,7 +373,7 @@
         background: rgba(1, 1, 1, 0.3);
         border-radius: 3px;
         padding: 20px 10px;
-    }
+    } */
 }
 
 
