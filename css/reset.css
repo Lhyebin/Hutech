@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: normal;
+    word-break: keep-all;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+p {
+    word-break: keep-all;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
