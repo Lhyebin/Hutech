@@ -35,6 +35,25 @@ $(function () {
 
 
 
+
+    //헤더 header @반응형
+    $('.header .icon .bar').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('on');
+        $('.gnb').toggleClass('on');
+    });
+
+    $('.gnb').on('wheel touchmove', function (e) {
+        e.preventDefault();
+    })
+
+
+
+
+
+
+
+
     // main_visual : 이미지 다음페이지
     $('.visual_wrap').slick({
         arrows: false,

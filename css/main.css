@@ -52,6 +52,41 @@
 
 @media(max-width: 768px) {
     .header {
+        position: sticky;
+    }
+
+    .header .header_wrap {
+        height: 80px;
+    }
+
+    .header img {
+        width: 130px;
+    }
+
+    .header .gnb {
+        z-index: -1;
+        line-height: 6cqb;
+    }
+
+    .header_wrap .gnb {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        background: #fff;
+        height: 100vh;
+        width: 100%;
+        padding: 100px 15px 0 15px;
+        transition: 0.5s;
+    }
+
+    .header_wrap .gnb.on {
+        right: 0;
+    }
+
+    .header .icon .user {
         display: none;
     }
 }
@@ -156,7 +191,7 @@
     width: 100%;
     max-width: 1900px;
 
-    font-size: 40px;
+    font-size: 35px;
     color: #fff;
     cursor: pointer;
 }
@@ -191,6 +226,13 @@
         flex-direction: column;
         gap: 10px;
     }
+
+    .main_visual .visual_tit .visual_click a {
+        padding: 8px 0;
+        align-self: center;
+        min-width: 200px;
+    }
+
 
     .main_visual .visual_arrows {
         display: none;
@@ -349,8 +391,20 @@
 
 @media(max-width: 768px) {
     .main_event {
-        display: none;
+        display: none !important;
     }
+
+    /* .event_wrap .case {
+        height: auto;
+    }
+
+    .event_wrap .page_main {
+        height: auto;
+    }
+
+    .event_wrap .page_main figure {
+        height: auto;
+    } */
 
     /* .main_event {
         position: relative;
@@ -573,7 +627,7 @@
     }
 
     .main_content .content_tit h2 {
-        font-size: 60px;
+        font-size: 55px;
         font-weight: 700;
         line-height: 60px;
         margin: 0 0 15px 0;
@@ -586,10 +640,33 @@
         margin: 0 0 30px 0;
     }
 
+    .main_content .content_box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main_content .con01 {
+        height: 400px;
+    }
+
+    .main_content .con02 {
+        height: 400px;
+    }
+
     .main_content .con_txt {
         opacity: 1;
         background: rgba(0, 0, 0, 0.5);
-        padding: 50px;
+        padding: 30px;
+    }
+
+    .main_content .con_txt p {
+        font-size: 18px;
+        margin: 0 0 15px 0;
+    }
+
+    .main_content .con_txt h3 {
+        font-size: 33px;
+        line-height: 43px;
+        margin: 0 0 40px 0;
     }
 
 }
