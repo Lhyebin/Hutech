@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: 1px solid #ddd;
-}
+} */
 
 :root {
     --mc: #028267;
@@ -48,6 +48,12 @@
 .header .icon {
     font-size: 26px;
     margin: 0 0 0 50px;
+}
+
+@media(max-width: 768px) {
+    .header {
+        display: none;
+    }
 }
 
 
@@ -123,11 +129,13 @@
 }
 
 .main_visual .visual_tit .visual_click {
-    font-size: 17px;
-    font-weight: 400;
+    display: flex;
+    gap: 20px;
 }
 
 .main_visual .visual_tit .visual_click a {
+    font-size: 17px;
+    font-weight: 100;
     border: 1px solid #fff;
     border-radius: 5px;
     padding: 10px 45px;
@@ -145,46 +153,49 @@
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
-    max-width: 1600px;
     width: 100%;
+    max-width: 1900px;
+
+    font-size: 40px;
+    color: #fff;
     cursor: pointer;
 }
 
-.main_visual .visual_arrows i {
-    font-size: 60px;
-    color: #fff;
-}
-
 @media(max-width: 768px) {
-    .main_visual .visual_tit strong {
-        font-size: 25px;
-        margin: 0 0 30px 0;
-    }
-
     .main_visual .visual_tit {
         text-align: center;
-        top: 53%;
+    }
+
+    .main_visual .visual_tit strong {
+        font-size: 21px;
+        margin: 0 0 20px 0;
     }
 
     .main_visual .visual_tit h2 {
-        font-size: 50px;
-        line-height: 60px;
-        margin: 0;
+        font-size: 37px;
+        line-height: 50px;
+        margin: 0 0 30px 0;
     }
 
     .main_visual .visual_tit p {
         font-size: 17px;
         line-height: 23px;
-        padding: 30px;
-        margin: 0 0 20px 0;
+        height: 40px;
     }
 
     .main_visual .visual_tit p br {
         display: none;
     }
 
-}
+    .main_visual .visual_tit .visual_click {
+        flex-direction: column;
+        gap: 10px;
+    }
 
+    .main_visual .visual_arrows {
+        display: none;
+    }
+}
 
 
 
@@ -319,6 +330,26 @@
 .main_event .event_arrows {
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1900px;
+    cursor: pointer;
+}
+
+.main_event .event_arrows i {
+    font-size: 27px;
+    color: #fff;
+    background: rgba(1, 1, 1, 0.3);
+    border-radius: 3px;
+    padding: 20px 10px;
+}
+
+/* .main_event .event_arrows {
+    position: absolute;
+    top: 50%;
     right: 0;
     transform: translate(-50%, -50%);
     display: flex;
@@ -335,7 +366,7 @@
     background: rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     padding: 20px 10px;
-}
+} */
 
 @media(max-width: 768px) {
     .main_event {
@@ -607,9 +638,9 @@
 .footer .footer_top .footer_gnb {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
 
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 300;
 }
 
@@ -625,26 +656,28 @@
 .footer .footer_bottom h2 {
     font-size: 17px;
     font-weight: 500;
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
 }
 
 .footer .footer_bottom address {
     font-size: 17px;
     font-weight: 300;
-    margin: 0 0 15px 0;
+    line-height: 25px;
+    margin: 0 0 10px 0;
     color: #eeeeee;
 }
 
 .footer .footer_bottom .footer_list {
     display: flex;
     gap: 23px;
-}
 
-.footer .footer_bottom .footer_list {
     font-size: 17px;
     font-weight: 300;
-    margin: 0 0 15px 0;
     color: #eeeeee;
+}
+
+.footer .footer_bottom .footer_list>li {
+    line-height: 30px;
 }
 
 .footer .footer_bottom .footer_list>li strong {
@@ -652,12 +685,62 @@
     color: #fff;
 }
 
-.footer .footer_bottom .bottom_icon {}
-
 .footer .footer_bottom .bottom_icon i {
     font-size: 18px;
     border: 1px solid #fff;
     border-radius: 50%;
     padding: 13px;
     margin: 0 5px 0 0;
+}
+
+.footer .footer_bottom .fist {
+    margin: 0 0 10px 0;
+}
+
+.footer .footer_bottom .sec {
+    margin: 0 0 10px 0;
+}
+
+@media(max-width: 768px) {
+    .footer .footer_top {
+        display: block;
+    }
+
+    .footer .footer_logo {
+        margin: 0 0 20px 0;
+    }
+
+    .footer .footer_top .footer_gnb {
+        display: block;
+    }
+
+    .footer .footer_top .footer_gnb>li {
+        margin: 0 0 7px 0;
+    }
+
+    .footer .footer_bottom {
+        display: block;
+    }
+
+    .footer .footer_bottom .bottom_txt {
+        font-size: 16px;
+    }
+
+    .footer .footer_bottom .footer_list {
+        display: block;
+        font-size: 16px;
+    }
+
+    .footer .footer_bottom .last li {
+        margin: 0 0 7px 0;
+    }
+
+    .footer .footer_bottom .last li:last-child {
+        margin: 0 0 20px 0;
+    }
+
+    .footer .footer_bottom .last strong {
+        display: block;
+        margin: 0 0 -5px 0;
+    }
 }

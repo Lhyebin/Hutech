@@ -68,6 +68,14 @@ $(function () {
         pauseOnFocus: false,
         slidesToShow: 2,
         variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    variableWidth: false,
+                }
+            },
+        ]
     });
 
     // main_event : 화살표
