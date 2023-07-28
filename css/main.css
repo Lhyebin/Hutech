@@ -65,7 +65,7 @@
 
     .header .gnb {
         z-index: -1;
-        line-height: 6cqb;
+        line-height: 60px;
     }
 
     .header_wrap .gnb {
@@ -189,7 +189,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1900px;
+    max-width: 1600px;
 
     font-size: 35px;
     color: #fff;
