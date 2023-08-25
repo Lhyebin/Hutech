@@ -170,7 +170,7 @@
 
 .main_visual .visual_tit .visual_click a {
     font-size: 17px;
-    font-weight: 100;
+    font-weight: 400;
     border: 1px solid #fff;
     border-radius: 5px;
     padding: 10px 45px;
@@ -198,6 +198,7 @@
 
 @media(max-width: 768px) {
     .main_visual .visual_tit {
+        top: 42%;
         text-align: center;
     }
 
@@ -231,6 +232,7 @@
         padding: 8px 0;
         align-self: center;
         min-width: 200px;
+        padding: 5px 40px 6px 40px;
     }
 
 
@@ -393,41 +395,6 @@
     .main_event {
         display: none !important;
     }
-
-    /* .event_wrap .case {
-        height: auto;
-    }
-
-    .event_wrap .page_main {
-        height: auto;
-    }
-
-    .event_wrap .page_main figure {
-        height: auto;
-    } */
-
-    /* .main_event {
-        position: relative;
-    }
-
-    .main_event .event_arrows {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: block;
-
-        cursor: pointer;
-
-    }
-
-    .main_event .event_arrows i {
-        font-size: 27px;
-        color: #fff;
-        background: rgba(1, 1, 1, 0.3);
-        border-radius: 3px;
-        padding: 20px 10px;
-    } */
 }
 
 
@@ -524,8 +491,19 @@
         display: block;
     }
 
-    .main_tech .tech_tit {
-        margin: 0 0 50px 0;
+    .main_tech .tech_tit strong {
+        font-weight: 500;
+    }
+
+    .main_tech .tech_tit h2 {
+        font-size: 35px;
+        line-height: 43px;
+        margin: 0 0 25px 0;
+    }
+
+    .main_tech .tech_tit p {
+        font-size: 17px;
+        line-height: 25px;
     }
 
     .main_tech .tech {
@@ -534,6 +512,39 @@
 
     .main_tech .tech img {
         align-items: center;
+    }
+
+    .main_tech .tech_txt h3 {
+        line-height: 25px;
+    }
+
+    .main_tech .tech_arrows {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        z-index: 999;
+
+    }
+
+    .main_tech .tech_tit i {
+        font-size: 20px;
+        padding: 20px 10px;
+        border: 1px solid #555;
+        margin: 0;
+    }
+
+
+    .main_tech .tech_txt h3 {
+        font-size: 21px;
+    }
+
+    .main_tech .tech_txt p {
+        font-size: 16px;
+        line-height: 23px;
     }
 }
 
@@ -627,17 +638,19 @@
     }
 
     .main_content .content_tit h2 {
-        font-size: 55px;
-        font-weight: 700;
-        line-height: 60px;
+        font-size: 45px;
+        font-weight: 900;
+        line-height: 50px;
         margin: 0 0 15px 0;
+        text-align: start;
     }
 
     .main_content .content_tit p {
         font-size: 17px;
         font-weight: 400;
         line-height: 23px;
-        margin: 0 0 30px 0;
+        margin: 0 0 40px 0;
+        text-align: start;
     }
 
     .main_content .content_box {
@@ -659,16 +672,25 @@
     }
 
     .main_content .con_txt p {
-        font-size: 18px;
+        font-size: 17px;
         margin: 0 0 15px 0;
     }
 
     .main_content .con_txt h3 {
-        font-size: 33px;
-        line-height: 43px;
+        font-size: 30px;
+        line-height: 38px;
         margin: 0 0 40px 0;
     }
 
+    .main_content .con_txt a {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 0 10px 0;
+
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 6px 30px 7px 30px;
+    }
 }
 
 
@@ -762,6 +784,10 @@
 }
 
 @media(max-width: 768px) {
+    .footer {
+        padding: 70px 0;
+    }
+
     .footer .footer_top {
         display: block;
     }
@@ -770,33 +796,48 @@
         margin: 0 0 20px 0;
     }
 
+    .footer .footer_top .footer_logo img {
+        width: 150px;
+    }
+
     .footer .footer_top .footer_gnb {
         display: block;
+        font-size: 16px;
     }
 
     .footer .footer_top .footer_gnb>li {
-        margin: 0 0 7px 0;
+        margin: 0 0 3px 0;
     }
 
     .footer .footer_bottom {
         display: block;
     }
 
-    .footer .footer_bottom .bottom_txt {
+    .footer .footer_bottom h2 {
         font-size: 16px;
     }
+
+    .footer .footer_bottom address {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
 
     .footer .footer_bottom .footer_list {
         display: block;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .footer .footer_bottom .last li {
-        margin: 0 0 7px 0;
+        margin: 0 0 3px 0;
     }
 
     .footer .footer_bottom .last li:last-child {
         margin: 0 0 20px 0;
+    }
+
+    .footer .footer_bottom .footer_list>li {
+        line-height: 25px;
     }
 
     .footer .footer_bottom .last strong {
